@@ -169,14 +169,34 @@
         font-style: normal;
     }
 
-    #body {
+    #abtMeContainer {
         display: flex;
         justify-content: center;
         font-family: 'Oswald', sans-serif;
         font-size: 23px;
         animation: fadeIn 6s;
     }
-
+    #myExpContainer{
+        display: flex;
+        justify-content: center;
+        font-family: 'Oswald', sans-serif;
+        font-size: 23px;
+        animation: fadeIn 6s;
+        }
+    #myProjContainer{
+        display: flex;
+        justify-content: center;
+        font-family: 'Oswald', sans-serif;
+        font-size: 23px;
+        animation: fadeIn 6s;
+    }
+    #contactContainer{
+        display: flex;
+        justify-content: center;
+        font-family: 'Oswald', sans-serif;
+        font-size: 23px;
+        animation: fadeIn 6s;
+    }
     body {
         background-image: url("backgroundImage.jpg");
     }
@@ -209,6 +229,11 @@
         font-size: 23px;
         animation: fadeIn 6s;
     }
+
+    .wrapper {
+        margin: 0 auto;
+        width: 650px;
+    };
 
     /* the .nav just contains my name and the burger menu. */
    /* .nav {
