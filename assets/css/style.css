@@ -235,14 +235,61 @@
         width: 650px;
     };
 
-    /* the .nav just contains my name and the burger menu. */
-   /* .nav {
-       display: flex;
-       justify-content: space-around
-   } */
-   /* label {
-       display: none;
-       margin: 0 40px 0 0;
-       font-size: 30px;
-       line-height: 70px; 
-   } */
+ /* Media Queries */
+
+ /* @media (max-width: 960px) {
+     #abtMeContainer{
+
+     };
+     #myExpContainer{
+         
+    };
+    #myProjContainer{
+         
+    };
+    #contactContainer{
+         
+    };
+    .buttonContainer{
+        width: 100%;
+        display: block;
+        text-align: center;
+      }
+ }
+
+ @media (max-width: 768px) {
+    #abtMeContainer{
+
+    };
+    #myExpContainer{
+        
+   };
+   #myProjContainer{
+        
+   };
+   #contactContainer{
+        
+   };
+   .buttonContainer{
+       width: 100%;
+       display: block;
+       text-align: center;
+     }
+     
+}
+
+@media (max-width: 640px) {
+    #abtMeContainer{
+
+    };
+    #myExpContainer{
+        
+   };
+   #myProjContainer{
+        
+   };
+   #contactContainer{
+        
+   };
+
+} */

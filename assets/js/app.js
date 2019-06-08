@@ -35,7 +35,7 @@ $('#btn3').on("click", function () {
 });
 
 $('#btn4').on("click", function () {
-    $('#header').html(" My Projects <br> <br>")
+    $('#header').html(" Contact <br> <br>")
     $('#abtMeContainer').hide();
     $('#myExpContainer').hide();
     $('#myProjContainer').hide();
