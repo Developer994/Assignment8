@@ -1,0 +1,295 @@
+
+    .buttonContainer {
+        display: flex;
+        justify-content: center;
+    }
+
+    #btn1 {
+        /* align-content: center; */
+        /* margin: 40px; */
+        color: #0099CC;
+        background: transparent;
+        border: 2px solid #0099CC;
+        border-radius: 6px;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        -webkit-transition-duration: 0.4s;
+        /* Safari */
+        transition-duration: 0.4s;
+        cursor: pointer;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    #btn1:hover {
+        background-color: #008CBA;
+        color: white;
+    }
+
+    #btn1 {
+        background-color: white;
+        color: black;
+        border: 2px solid #008CBA;
+    }
+
+    #btn2 {
+        /* align-content: center; */
+        /* margin: 40px; */
+        color: rgb(173, 6, 6);
+        background: transparent;
+        border: 2px solid rgb(173, 6, 6);
+        border-radius: 6px;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        -webkit-transition-duration: 0.4s;
+        /* Safari */
+        transition-duration: 0.4s;
+        cursor: pointer;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    #btn2:hover {
+        background-color: rgb(173, 6, 6);
+        color: white;
+    }
+
+    #btn2 {
+        background-color: white;
+        color: black;
+        border: 2px solid rgb(199, 37, 37);
+    }
+
+    #btn3 {
+        /* align-content: center; */
+        /* margin: 40px; */
+        color: rgb(7, 228, 81);
+        background: transparent;
+        border: 2px solid rgb(7, 228, 81);
+        border-radius: 6px;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        -webkit-transition-duration: 0.4s;
+        /* Safari */
+        transition-duration: 0.4s;
+        cursor: pointer;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    #btn3:hover {
+        background-color: rgb(7, 228, 81);
+        color: white;
+    }
+
+    #btn3 {
+        background-color: white;
+        color: black;
+        border: 2px solid rgb(7, 228, 81);
+    }
+
+    #btn4 {
+        /* align-content: center; */
+        margin: 40px;
+        color: rgb(228, 158, 7);
+        background: transparent;
+        border: 2px solid rgb(228, 158, 7);
+        border-radius: 6px;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        -webkit-transition-duration: 0.4s;
+        /* Safari */
+        transition-duration: 0.4s;
+        cursor: pointer;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    #btn4:hover {
+        background-color: rgb(228, 158, 7);
+        color: white;
+    }
+
+    #btn4 {
+        background-color: white;
+        color: black;
+        border: 2px solid rgb(228, 158, 7);
+    }
+
+    h3 {
+        display: flex;
+        justify-content: center;
+    }
+
+    #expContainer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .row {
+        display: flex;
+        justify-content: center;
+    }
+
+    p {
+        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    #header {
+        display: flex;
+        justify-content: center;
+        font-size: 60px;
+        font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+        font-size: 70px;
+        font-style: normal;
+    }
+
+    #abtMeContainer {
+        display: flex;
+        justify-content: center;
+        font-family: 'Oswald', sans-serif;
+        font-size: 23px;
+        animation: fadeIn 2s;
+    }
+    #myExpContainer{
+        display: flex;
+        justify-content: center;
+        font-family: 'Oswald', sans-serif;
+        font-size: 23px;
+        animation: fadeIn 2s;
+        }
+    #myProjContainer{
+        display: flex;
+        justify-content: center;
+        font-family: 'Oswald', sans-serif;
+        font-size: 23px;
+        animation: fadeIn 2s;
+    }
+    #contactContainer{
+        display: flex;
+        justify-content: center;
+        font-family: 'Oswald', sans-serif;
+        font-size: 23px;
+        animation: fadeIn 2s;
+    }
+    body {
+        background-image: url("backgroundImage.jpg");
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    h1 {
+        font-family: 'Indie Flower', cursive;
+    }
+
+    #contact2{
+        font-family: 'Oswald', sans-serif;
+        font-size: 23px;
+        animation: fadeIn 2s;
+    }
+    #contact3{
+        font-family: 'Oswald', sans-serif;
+        font-size: 23px;
+        animation: fadeIn 2s;
+    }
+    #contact4{
+        font-family: 'Oswald', sans-serif;
+        font-size: 23px;
+        animation: fadeIn 2s;
+    }
+
+    .wrapper {
+        margin: 0 auto;
+        width: 650px;
+    };
+
+ /* Media Queries */
+
+ /* @media (max-width: 960px) {
+     #abtMeContainer{
+
+     };
+     #myExpContainer{
+         
+    };
+    #myProjContainer{
+         
+    };
+    #contactContainer{
+         
+    };
+    .buttonContainer{
+        width: 100%;
+        display: block;
+        text-align: center;
+      }
+ }
+
+ @media (max-width: 768px) {
+    #abtMeContainer{
+
+    };
+    #myExpContainer{
+        
+   };
+   #myProjContainer{
+        
+   };
+   #contactContainer{
+        
+   };
+   .buttonContainer{
+       width: 100%;
+       display: block;
+       text-align: center;
+     }
+     
+}
+
+@media (max-width: 640px) {
+    #abtMeContainer{
+
+    };
+    #myExpContainer{
+        
+   };
+   #myProjContainer{
+        
+   };
+   #contactContainer{
+        
+   };
+
+} */
