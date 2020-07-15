@@ -1,292 +1,237 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>My Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/dropdown.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <script src="node_modules/remove-focus-outline/outline.js"></script>
+    <title>My Portfolio</title>
 </head>
 
 <body>
 
-    <div class="nav">
-        <h1 class="name">Rezwan Atcha</h1>
-    </div>
-
     <div class="container">
-        <div class="row">
-            <div class="wrapper">
-                <div class="btn" id="btn1">
-                    <button type="button">Hover Me</button>
-                </div>
-            </div>
-            <div class="wrapper">
-                <div class="btn" id="btn2">
-                    <button type="button">Hover Me</button>
-                </div>
-            </div>
-            <div class="wrapper">
-                <div class="btn" id="btn3">
-                    <button type="button">Hover Me</button>
-                </div>
-            </div>
-            <div class="wrapper">
-                <div class="btn" id="btn4">
-                    <button type="button">Hover Me</button>
-                </div>
-            </div>
+        <div class="row__button">
+            <button class="btn" id="btn1">About me</button>
+            <button class="btn" id="btn2">My Experience</button>
+            <button class="btn" id="btn3">My Projects</button>
+            <button class="btn" id="btn4">Contact</button>
         </div>
 
-        <br> <br>
-
-        <div class="col-sm-6 col-md-8 col-lg-12 text-center">
-            <div id="header">
-                About Me
-                <br> <br>
+        <div class="page__contents">
+            <div class="row__header">
+                <div id="header">
+                    About Me
+                    <br> <br>
+                </div>
             </div>
+
             <div id="abtMeContainer">
-                As a developer in the field of full stack development, I am an individual who is compassionate in
-                building websites and programming them. Other qualifications include a advanced diploma in
-                Electrical
-                Engineering Technology : Control Systems from Humber College and some experience in construction.
-            </div>
-            <div id="myExpContainer">
-                I have learned and earned experience in html, css, javascript, jQuery, bootstrap, AJAX, JSON, APIs,
-                Mysql, handlebars, orm, sequelize and MERN (Mongo, Express.js, React, Node.js).
-                I have also create a project with my group to track interesting events in any cities that have
-                events.
-                This
-                is available to be viewed on the My Projects section.
-            </div>
-            <div id="myProjContainer">
-                <div class="btn-group">
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                        BudgetFriendly
-                    </button>
-                    <div class="dropdown-menu mega-menu">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <button type="button" class="close" aria-label="Close">
-                                    Close
-                                </button>
-                                <img src="assets/images/budgetfriendly.JPG" width="500" height="300" alt="">
-                                <p>The BudgetFriendly app allows you to monitor your spendings! All you need to do is
-                                    signup,
-                                    signin,
-                                    and start using the application!</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-3">
-                                <a class="dropdown-item">Technologies</a>
-                                <ul>
-                                    <li>NodeJS</li>
-                                    <li>Javascript</li>
-                                    <li>Express</li>
-                                    <li>Handlebars</li>
-                                    <li>MySQL</li>
-                                    <li>HTML</li>
-                                    <li>Jquery</li>
-                                    <li>CSS</li>
-                                    <li>Sequelizer</li>
-                                </ul>
-                            </div>
-                            <div class="col-md-3">
-                                <!-- <p>Guest Email Address: guest_user@guestuser.com</p>
-                                <p>Guest Password: xyz123</p> -->
-                                <a class="dropdown-item" id="projectButton" target="_blank"
-                                    href="https://github.com/Developer994/BudgetFriendly">Github
-                                    repo</a>
-                                <a class="dropdown-item" id="projectButton" target="_blank"
-                                    href="https://vast-beach-77916.herokuapp.com/">Deployed
-                                    App</a>
-                                <b></b>
-                                <a class="dropdown-item">Guest Email Address: guest_user@guestuser.com</a>
-                                <a class="dropdown-item">Guest Password: xyz123</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="btn-group">
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                        Giphy
-                    </button>
-                    <div class="dropdown-menu mega-menu">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <button type="button" class="close" aria-label="Close">
-                                    Close
-                                </button>
-                                <img src="assets/images/Giphy.JPG" width="500" height="300" alt="">
-                                <p>The Giphy app allows the user to see giphy pics of animals by clicking the buttons or
-                                    adding their own prefered animal through the searchbar!</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-3">
-                                <a class="dropdown-item">Technologies</a>
-                                <ul>
-                                    <li>HTML for styling</li>
-                                    <li>Javascript for processing the app</li>
-                                    <li>Giphy API for the content</li>
-                                </ul>
-                            </div>
-                            <div class="col-md-3">
-                                <a class="dropdown-item" id="projectButton" target="_blank"
-                                    href="https://github.com/Developer994/Giphy">Github
-                                    repo</a>
-                                <a class="dropdown-item" id="projectButton" target="_blank"
-                                    href="https://developer994.github.io/Giphy/">Deployed
-                                    App</a>
-                                <b></b>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="btn-group">
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                        ClickyGame
-                    </button>
-                    <div class="dropdown-menu mega-menu">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <button type="button" class="close" aria-label="Close">
-                                    Close
-                                </button>
-                                <img src="assets/images/ClickyGame.JPG" width="500" height="300" alt="">
-                                <p>The ClickyGame is a game where the user gets to choose an image, remember the image,
-                                    and click it. Once it has been clicked, the images gets scrambled and the user gets
-                                    to pick another image, making sure it is not the one they have already clicked, or
-                                    they lose! </p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-3">
-                                <a class="dropdown-item">Technologies</a>
-                                <ul>
-                                    <li>React</li>
-                                    <li>Node Packages through npm install</li>
-                                    <li>CSS</li>
-                                    <li>Git</li>
-                                </ul>
-                            </div>
-                            <div class="col-md-3">
-                                <a class="dropdown-item" id="projectButton" target="_blank"
-                                    href="https://github.com/Developer994/ClickyGame">Github
-                                    repo</a>
-                                <a class="dropdown-item" id="projectButton" target="_blank"
-                                    href="https://developer994.github.io/ClickyGame/">Deployed
-                                    App</a>
-                                <b></b>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="btn-group">
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                        Psychic Game
-                    </button>
-                    <div class="dropdown-menu mega-menu">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <button type="button" class="close" aria-label="Close">
-                                    Close
-                                </button>
-                                <img src="assets/images/Psychic Game.JPG" width="500" height="300" alt="">
-                                <p>The Psychic Game is a game where the user has to guess the right letter. The user
-                                    gets 10 tries to get the right letter. After 10 tries, the user loses the round. If
-                                    the user loses 8 rounds, the game then restarts. </p>
-                            </div>
-                        </div>
-                        <div class="row">
 
-                            <div class="col-md-3">
-                                <a class="dropdown-item">Technologies</a>
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>Javascript</li>
-                                </ul>
+                <p class="para1"> As a developer in the field of full stack development, I am an individual who is
+                    compassionate
+                    in the front-end and back-end developing of websites. Other qualifications include an advanced
+                    diploma in
+                    Electrical
+                    Engineering Technology : Control Systems from Humber College and some experience in construction.
+                </p>
+
+            </div>
+
+            <div id="myExpContainer">
+
+                <p class="para2">
+                    My passion lies towards building websites using technologies such as HTML, CSS, Bootstrap, SASS,
+                    Javascript,
+                    jQuery and MERN (Mongo, Express.js, React, Node.js).
+                    I have also learned and gained experience in
+                    AJAX,
+                    JSON, APIs,
+                    Mysql, handlebars, orm, and sequelize.
+                    I have applied most of my skills in the projects that I had created in my bootcamp course, in
+                    projects such as the BudgetFriendly app and ClickyGame.
+                    These are available to be viewed on the My Projects section.
+                </p>
+
+            </div>
+
+            <div id="myProjContainer">
+
+                <div class="row">
+                    <div class="col-1-of-3">
+                        <div class="card">
+                            <div class="card__side card__side--front card__side--front-1">
+                                <div class="card__picture card__picture--1">
+                                    &nbsp;
+                                </div>
+                                <h4 class="card__heading">
+                                    <span class="card__heading-span card__heading-span--1">
+                                        Clicky Game
+                                    </span>
+                                </h4>
+                                <div class="card__details">
+                                    A Simple React memory game where the user can only click each card once per game or
+                                    they lose. Once
+                                    clicked, a new set of cards will appear which can include the last chosen card and
+                                    they have to chose a different one.
+                                </div>
+
                             </div>
-                            <div class="col-md-3">
-                                <a class="dropdown-item" id="projectButton" target="_blank"
-                                    href="https://github.com/Developer994/Psychic-Game">Github
-                                    repo</a>
-                                <a class="dropdown-item" id="projectButton" target="_blank"
-                                    href="https://developer994.github.io/Psychic-Game/">Deployed
-                                    App</a>
-                                <b></b>
+                            <div class="card__side card__side--back card__side--back-1">
+                                <div class="card__cta">
+                                    <div class="row row__tech-1">
+                                        <h4 class="card__tech">Technologies:</h4>
+                                        <ul>
+                                            <li>React</li>
+                                            <li>NPM</li>
+                                            <li>CSS</li>
+                                            <li>Git</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="row row__card1BtnRow">
+                                        <a href="https://github.com/Developer994/ClickyGame" target="blank"
+                                            class="btn btn__projectCard">Repo</a>
+                                        <a href="https://developer994.github.io/ClickyGame/" target="blank"
+                                            class="btn btn__projectCard">App</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-1-of-3">
+                        <div class="card">
+                            <div class="card__side card__side--front card__side--front-2">
+                                <div class="card__picture card__picture--2">
+                                    &nbsp;
+                                </div>
+                                <h4 class="card__heading">
+                                    <span class="card__heading-span card__heading-span--2">
+                                        Budget Friendly
+                                    </span>
+                                </h4>
+                                <div class="card__details">
+                                    A simple app that is used to Monitor your spendings. Simply the user signs up,
+                                    signs in and
+                                    can then start using the app. A free guest account with email address and
+                                    password
+                                    are available for those who would like to test the app.
+                                </div>
+
+                            </div>
+                            <div class="card__side card__side--back card__side--back-2">
+                                <div class="card__cta">
+                                    <div class="row row__tech-2">
+                                        <div class="col-1-of-2">
+                                            <h4 class="card__tech">Technologies:</h4>
+                                        </div>
+                                        <div class="col-1-of-2">
+                                            <ul>
+                                                <li>NodeJS</li>
+                                                <li>Javascript</li>
+                                                <li>Express</li>
+                                                <li>MySql</li>
+                                                <li>HTML</li>
+                                                <li>jQuery</li>
+                                                <li>CSS</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-1-of-2">
+                                            <h4 class="card__tech">Credentials:</h4>
+                                        </div>
+                                        <div class="col-1-of-2">
+                                            <ul>
+                                                <li>Guest Email Address: guest@guest.com</li>
+                                                <br>
+                                                <li>Guest Password: xyz123</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="row row__card2BtnRow">
+                                        <a href="https://github.com/Developer994/BudgetFriendly" target="blank"
+                                            class="btn btn__projectCard">Repo</a>
+                                        <a href="https://vast-beach-77916.herokuapp.com/" target="blank"
+                                            class="btn btn__projectCard">App</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-1-of-3">
+                        <div class="card">
+                            <div class="card__side card__side--front card__side--front-3">
+                                <div class="card__picture card__picture--3">
+                                    &nbsp;
+                                </div>
+                                <h4 class="card__heading">
+                                    <span class="card__heading-span card__heading-span--3">
+                                        Giphy
+                                    </span>
+                                </h4>
+                                <div class="card__details">
+                                    An app where the user can view different types of giphy animated images. By
+                                    default,
+                                    there are 4 animal giphys to click on, but user can add more through the search
+                                    bar.
+                                </div>
+
+                            </div>
+                            <div class="card__side card__side--back card__side--back-3">
+                                <div class="card__cta">
+                                    <div class="row">
+                                        <h4 class="card__tech">Technologies:</h4>
+                                        <ul>
+                                            <li>HTML</li>
+                                            <li>Javascript</li>
+                                            <li>Giphy API</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="row row__card3BtnRow">
+                                        <a href="https://github.com/Developer994/Giphy" target="blank"
+                                            class="btn btn__projectCard">Repo</a>
+                                        <a href="https://developer994.github.io/Giphy/" target="blank"
+                                            class="btn btn__projectCard">App</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
-            <!-- <ul>
-                    <li>Project 1: <a href="https://github.com/charmata/events-tracker" target="_blank"> Events
-                            Tracker
-                            files</a>, <a href="https://charmata.github.io/events-tracker/" target="_blank"> Events
-                            Tracker Webpage</a></li>
-                    <li>Project 2: <a href="https://github.com/Developer994/bamazon" target="_blank"> bamazon
-                            app</a></li>
-                    <li>Project 3: <a href="https://safe-sierra-81909.herokuapp.com/" target="_blank"> Friend
-                            Finder</a></li>
-                    <li>Project 4: <a href="https://developer994.github.io/ClickyGame/" target="_blank">
-                            ClickyGame</a><a href="https://github.com/Developer994/ClickyGame"> ClickyGame Files</a>
-                    </li>
-                    <li>Project 5: <a href="https://vast-beach-77916.herokuapp.com/" target="blank">BudgetFriendly</a>,
-                        <a href="https://github.com/Developer994/BudgetFriendly" target="blank">BudgetFriendly
-                            files</a>
-                    </li>
-                </ul> -->
 
 
             <div id="contactContainer">
                 <ul>
-                    <p>Github Profile page:<a href="https://github.com/Developer994"> Developer994</a></p>
-                    <p>LinkedIn: <a href="https://www.linkedin.com/in/rezwan-atcha-3053a6147/">Rezwan Atcha</a></p>
-                    <p>Email Address: rez_a@outlook.com</p>
-                    <p>Phone Number: (647) 608-0453</p>
+                    <p class="contact__info1">Github Profile page:<a target="blank"
+                            href="https://github.com/Developer994">
+                            Developer994</a></p>
+                    <p class="contact__info1">LinkedIn: <a target="blank"
+                            href="https://www.linkedin.com/in/rezwan-atcha-3053a6147/">Rezwan Atcha</a></p>
+                    <p class="contact__info2">Email Address: rez_a@outlook.com</p>
+                    <p class="contact__info2">Phone Number: (647) 608-0453</p>
                 </ul>
-                <!-- <p></p> -->
             </div>
         </div>
     </div>
 
-
-
-
-
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Jquery -->
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <!-- Firebase -->
-    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
-    <!-- Moment.js -->
-    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
-    <!-- Bootstrap Jquery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-        </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
     <script src="assets/js/app.js"></script>
-</body>
 
+</body>
 
 </html>

@@ -1,305 +1,66 @@
-    .close {
-        margin-right: 450px;
-    }
+.btn {
+  background-color: transparent;
+  position: relative;
+  color: black;
+  text-decoration: none;
+  border: 0.2rem solid #414040;
+  overflow: hidden;
+  text-transform: uppercase;
+  padding: 15px 40px;
+  margin-top: 20px;
+  display: inline-block;
+  text-align: center;
+  transition: all .3s ease;
+  z-index: 5;
+  cursor: pointer; }
+  .btn:hover {
+    background-color: #c82641;
+    color: silver;
+    transform: translateY(-3px);
+    border-radius: 100px;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+    .btn:hover::before {
+      height: 380%; }
+  .btn:active {
+    transform: translateY(3px);
+    transition: all .1s ease;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    color: black; }
+  .btn::before {
+    content: "";
+    background: #c82641;
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transition: all 0.3s ease;
+    transform: translate(-50%, -50%) rotate(45deg); }
 
-    #projectButton {
-        background: lightblue;
-        border-radius: 6px;
-        margin-bottom: 10px;
-        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    }
+#btn1, #btn2, #btn3, #btn4 {
+  margin-right: 2%; }
 
-    .buttonContainer {
-        display: flex;
-        justify-content: center;
-    }
+* {
+  padding: 0;
+  margin: 0; }
 
-    #btn1 {
-        /* align-content: center; */
-        /* margin: 40px; */
-        color: #0099CC;
-        background: transparent;
-        border: 2px solid #0099CC;
-        border-radius: 6px;
-        border: none;
-        color: white;
-        padding: 16px 32px;
-        text-align: center;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        -webkit-transition-duration: 0.4s;
-        /* Safari */
-        transition-duration: 0.4s;
-        cursor: pointer;
-        text-decoration: none;
-        text-transform: uppercase;
-    }
+.container {
+  text-align: center;
+  padding-top: 30px;
+  width: 100vw; }
+  .container #abtMeContainer {
+    display: inline-block;
+    width: 40%; }
 
-    #btn1:hover {
-        background-color: #008CBA;
-        color: white;
-    }
-
-    #btn1 {
-        background-color: white;
-        color: black;
-        border: 2px solid #008CBA;
-    }
-
-    #btn2 {
-        /* align-content: center; */
-        /* margin: 40px; */
-        color: rgb(173, 6, 6);
-        background: transparent;
-        border: 2px solid rgb(173, 6, 6);
-        border-radius: 6px;
-        border: none;
-        color: white;
-        padding: 16px 32px;
-        text-align: center;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        -webkit-transition-duration: 0.4s;
-        /* Safari */
-        transition-duration: 0.4s;
-        cursor: pointer;
-        text-decoration: none;
-        text-transform: uppercase;
-    }
-
-    #btn2:hover {
-        background-color: rgb(173, 6, 6);
-        color: white;
-    }
-
-    #btn2 {
-        background-color: white;
-        color: black;
-        border: 2px solid rgb(199, 37, 37);
-    }
-
-    #btn3 {
-        /* align-content: center; */
-        /* margin: 40px; */
-        color: rgb(7, 228, 81);
-        background: transparent;
-        border: 2px solid rgb(7, 228, 81);
-        border-radius: 6px;
-        border: none;
-        color: white;
-        padding: 16px 32px;
-        text-align: center;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        -webkit-transition-duration: 0.4s;
-        /* Safari */
-        transition-duration: 0.4s;
-        cursor: pointer;
-        text-decoration: none;
-        text-transform: uppercase;
-    }
-
-    #btn3:hover {
-        background-color: rgb(7, 228, 81);
-        color: white;
-    }
-
-    #btn3 {
-        background-color: white;
-        color: black;
-        border: 2px solid rgb(7, 228, 81);
-    }
-
-    #btn4 {
-        /* align-content: center; */
-        margin: 40px;
-        color: rgb(228, 158, 7);
-        background: transparent;
-        border: 2px solid rgb(228, 158, 7);
-        border-radius: 6px;
-        border: none;
-        color: white;
-        padding: 16px 32px;
-        text-align: center;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        -webkit-transition-duration: 0.4s;
-        /* Safari */
-        transition-duration: 0.4s;
-        cursor: pointer;
-        text-decoration: none;
-        text-transform: uppercase;
-    }
-
-    #btn4:hover {
-        background-color: rgb(228, 158, 7);
-        color: white;
-    }
-
-    #btn4 {
-        background-color: white;
-        color: black;
-        border: 2px solid rgb(228, 158, 7);
-    }
-
-    h3 {
-        display: flex;
-        justify-content: center;
-    }
-
-    #expContainer {
-        display: flex;
-        justify-content: center;
-    }
-
-    .row {
-        display: flex;
-        justify-content: center;
-    }
-
-    p {
-        font-family: 'Oswald', sans-serif;
-        font-size: 20px;
-    }
-
-    h3 {
-        font-size: 30px;
-    }
-
-    #header {
-        display: flex;
-        justify-content: center;
-        font-size: 60px;
-        font-family: Copperplate, "Copperplate Gothic Light", fantasy;
-        font-size: 70px;
-        font-style: normal;
-    }
-
-    #abtMeContainer {
-        display: flex;
-        justify-content: center;
-        font-family: 'Oswald', sans-serif;
-        font-size: 23px;
-        animation: fadeIn 2s;
-    }
-    #myExpContainer{
-        display: flex;
-        justify-content: center;
-        font-family: 'Oswald', sans-serif;
-        font-size: 23px;
-        animation: fadeIn 2s;
-        }
-    #myProjContainer{
-        display: flex;
-        justify-content: center;
-        font-family: 'Oswald', sans-serif;
-        font-size: 23px;
-        animation: fadeIn 2s;
-    }
-    #contactContainer{
-        display: flex;
-        justify-content: center;
-        font-family: 'Oswald', sans-serif;
-        font-size: 23px;
-        animation: fadeIn 2s;
-    }
-    body {
-        background-image: url("backgroundImage.jpg");
-    }
-
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-
-    h1 {
-        font-family: 'Indie Flower', cursive;
-    }
-
-    #contact2{
-        font-family: 'Oswald', sans-serif;
-        font-size: 23px;
-        animation: fadeIn 2s;
-    }
-    #contact3{
-        font-family: 'Oswald', sans-serif;
-        font-size: 23px;
-        animation: fadeIn 2s;
-    }
-    #contact4{
-        font-family: 'Oswald', sans-serif;
-        font-size: 23px;
-        animation: fadeIn 2s;
-    }
-
-    .wrapper {
-        margin: 0 auto;
-        width: 650px;
-    };
-
- /* Media Queries */
-
- /* @media (max-width: 960px) {
-     #abtMeContainer{
-
-     };
-     #myExpContainer{
-         
-    };
-    #myProjContainer{
-         
-    };
-    #contactContainer{
-         
-    };
-    .buttonContainer{
-        width: 100%;
-        display: block;
-        text-align: center;
-      }
- }
-
- @media (max-width: 768px) {
-    #abtMeContainer{
-
-    };
-    #myExpContainer{
-        
-   };
-   #myProjContainer{
-        
-   };
-   #contactContainer{
-        
-   };
-   .buttonContainer{
-       width: 100%;
-       display: block;
-       text-align: center;
-     }
-     
-}
-
-@media (max-width: 640px) {
-    #abtMeContainer{
-
-    };
-    #myExpContainer{
-        
-   };
-   #myProjContainer{
-        
-   };
-   #contactContainer{
-        
-   };
-
-} */
+#header {
+  margin-top: 50px;
+  display: inline-block;
+  width: 40%;
+  font-size: 70px;
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+  font-style: normal;
+  position: relative;
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text; }

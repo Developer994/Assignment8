@@ -1,7 +1,3 @@
-
-
-
-
 function website() {
     $('#abtMeContainer').show();
     $('#myExpContainer').hide();
@@ -11,7 +7,7 @@ function website() {
 website()
 
 $('#btn1').on("click", function () {
-    $('#header').html("About Me <br> <br>");
+    $('#header').html(" About Me <br> <br>");
     $('#abtMeContainer').show();
     $('#myExpContainer').hide();
     $('#myProjContainer').hide();
@@ -32,7 +28,7 @@ $('#btn3').on("click", function () {
     $('#myExpContainer').hide();
     $('#myProjContainer').show();
     $('#contactContainer').hide();
-});
+})
 
 $('#btn4').on("click", function () {
     $('#header').html(" Contact <br> <br>")
@@ -40,4 +36,4 @@ $('#btn4').on("click", function () {
     $('#myExpContainer').hide();
     $('#myProjContainer').hide();
     $('#contactContainer').show();
-});
+})
